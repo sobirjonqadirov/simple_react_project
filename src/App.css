@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background: #282D35;
+  min-height: 100vh;
 }
 
 * {
@@ -21,7 +23,7 @@ nav {
   padding: 30px 26px;
 }
 
-.logo {
+.nav--logo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,18 +31,18 @@ nav {
   width: 158px;
 }
 
-.logo > img {
+.nav--logo > img {
   height: 29px;
 }
 
-.logo > p {
+.nav--logo > p {
   height: 27px;
   font-size: 22.25px;
   color: #61DAFB;
   font-weight: 700;
 }
 
-.title > p {
+.nav--title > h4 {
   margin-top: 7px;
   margin-right: 1px;
   color: #DEEBF8;
@@ -49,4 +51,45 @@ nav {
   font-size: 16px;
   text-align: right;
   font-weight: 600;
+}
+
+.main {
+  color: #fff;
+  margin: 57px 0 0 27px;
+  background-image: url(./images/react-icon-large.png);
+  background-repeat: no-repeat;
+  background-position: right 75%;
+}
+
+.main--title {
+  font-size: 39px;
+  height: 41px;
+  letter-spacing: -2px;
+}
+
+.main--content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main--list {
+  margin-top: 36px;
+  max-width: 400px;
+  margin-left: 47px;
+}
+
+.main--list > li {
+  font-weight: 400;
+  padding-block: 10px;
+}
+
+.main--list > li::marker {
+  color: #61DAFB;
+  font-size: 1.4rem;
+}
+
+.main--list > li > p{
+  font-size: 16px;
+  color: #fff;
 }
